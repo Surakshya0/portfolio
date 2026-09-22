@@ -43,7 +43,7 @@ export const about = {
   stats: [
     { value: "BCA", label: "Completed" },
     { value: "4+", label: "Projects built" },
-    { value: "6", label: "Certifications" },
+    { value: "7", label: "Certifications" },
     { value: "2025", label: "Internship" },
   ],
 };
@@ -234,13 +234,20 @@ export const uiDesigns: UIDesign[] = [
   { title: "Figma Designs", description: "Component-driven design systems built in Figma." },
 ];
 
-export const certifications: { title: string; subtitle: string }[] = [
-  { title: "QA", subtitle: "Quality Assurance & Testing" },
-  { title: "Python", subtitle: "Programming Fundamentals" },
-  { title: "WordPress", subtitle: "Website Development" },
-  { title: "Java", subtitle: "Object-Oriented Programming" },
-  { title: "Scripting Language", subtitle: "Automation & Scripting" },
-  { title: "C Programming", subtitle: "Core Programming" },
+// Scans live in /public/certificates. Newest first.
+export const certifications: {
+  title: string;
+  topic: string;
+  date: string;
+  image: string;
+}[] = [
+  { title: "Quality Assurance", topic: "Gmail", date: "Apr 2025", image: "/certificates/07-quality-assurance-gmail.jpg" },
+  { title: "Python", topic: "Customer Segmentation Classification", date: "Feb 2025", image: "/certificates/06-python-customer-segmentation.jpg" },
+  { title: "WordPress", topic: "Recipe Site", date: "May 2024", image: "/certificates/05-wordpress-recipe-site.jpg" },
+  { title: "Scripting Language", topic: "Food Blog", date: "Apr 2024", image: "/certificates/04-scripting-food-blog.jpg" },
+  { title: "Data Structures & Algorithms", topic: "Phone Book", date: "Sep 2023", image: "/certificates/03-dsa-phone-book.jpg" },
+  { title: "C Programming", topic: "Contact Management System", date: "Mar 2023", image: "/certificates/02-c-programming-contact-management.jpg" },
+  { title: "Term Paper", topic: "NFT", date: "Aug 2022", image: "/certificates/01-term-paper-nft.jpg" },
 ];
 
 export const process: { step: string; description: string }[] = [
