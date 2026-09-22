@@ -6,9 +6,6 @@ import { certifications, profile } from "@/lib/data";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 
-const certsUrl =
-  profile.socials.find((s) => s.label === "Certificates")?.href ?? "#";
-
 export default function Certifications() {
   return (
     <section id="certifications" className="section-pad relative">
@@ -46,7 +43,7 @@ export default function Certifications() {
         <Reveal direction="up" delay={0.1}>
           <div className="mt-10 flex justify-center">
             <a
-              href={certsUrl}
+              href={profile.certificatesUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-blush-700 shadow-glass transition-colors hover:bg-white/70"

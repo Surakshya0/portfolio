@@ -25,6 +25,7 @@ export const profile = {
   avatar: "/profile.jpg",
   // Add your CV to /public (e.g. /cv.pdf) and update this path.
   resumeUrl: "/cv.pdf",
+  certificatesUrl: "https://github.com/Surakshya0/Certificates",
   socials: [
     { label: "GitHub", href: "https://github.com/Surakshya0" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/surakshya-bhusal-408771371/" },
